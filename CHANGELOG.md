@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/mubaraksoft/event-emitter/compare/v1.0.0...v1.0.1) (2025-10-05)
+
+
+### Bug Fixes
+
+* package version ([6776980](https://github.com/mubaraksoft/event-emitter/commit/6776980819028f1793eb2ec1a559f9082b1b9500))
+
 # 1.0.0 (2025-10-05)
 
 
