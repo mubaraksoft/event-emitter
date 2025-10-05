@@ -5,8 +5,6 @@ on:
 
 permissions:
     contents: write # required to push tags and create releases
-    issues: write # if you want @semantic-release/github to open issues
-    pull-requests: write # if you want PR comments/labels
 
 jobs:
     release:
@@ -22,5 +20,5 @@ jobs:
             - run: npm run build
             - run: npx semantic-release
               env:
-                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # provided by Actions
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # if you publish to npm
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # provided by Actions
