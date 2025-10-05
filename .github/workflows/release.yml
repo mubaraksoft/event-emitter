@@ -1,33 +1,26 @@
 name: Release
 on:
     push:
-        branches:
-            - main
+        branches: [main]
+
+permissions:
+    contents: write # required to push tags and create releases
+    issues: write # if you want @semantic-release/github to open issues
+    pull-requests: write # if you want PR comments/labels
+
 jobs:
     release:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout
-              uses: actions/checkout@v4
-
-            - name: Setup Node.js
-              uses: actions/setup-node@v4
+            - uses: actions/checkout@v4
               with:
-                  node-version: "lts/*"
-            - name: Create .npmrc
-              uses: v-venes/create-npmrc@v1.0.0
+                  persist-credentials: false # let semantic-release handle auth
+            - uses: actions/setup-node@v4
               with:
-                  org_name: mubaraksoft
-                  auth_token: ${{secrets.GH_TOKEN}}
-                  always_auth: true
-
-            - name: Install dependencies
-              run: npm clean-install
-
-            - name: Build package
-              run: npm run build
-
-            - name: Release
+                  node-version: 20
+            - run: npm ci
+            - run: npm run build
+            - run: npx semantic-release
               env:
-                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-              run: npx semantic-release
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # provided by Actions
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # if you publish to npm
