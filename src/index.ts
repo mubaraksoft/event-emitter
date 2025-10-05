@@ -1,4 +1,4 @@
-// Utility: event payload augmented with its event name
+// Utility: event payload augmented with its event name (added at dispatch)
 type WithEventName<N extends string, P> = P & { eventName?: N };
 
 // A map from event name -> payload type
@@ -131,7 +131,7 @@ export class EventEmitter<M extends EventMapBase> implements IEventEmitter<M> {
   }
 
   private setNamespace(namespace: string) {
-    if (!namespace) throw new Error("Please provide a namespace");
+    if (!namespace) throw new Error("namespace should be valid");
     if (!this.controllers.has(namespace)) {
       this.controllers.set(namespace, new AbortController());
     }
