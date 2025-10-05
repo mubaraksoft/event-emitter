@@ -22,5 +22,5 @@ jobs:
             - run: npm run build
             - run: npx semantic-release
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # provided by Actions
+                  GITHUB_TOKEN: ${{ secrets.GH_TOKEN }} # provided by Actions
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }} # if you publish to npm
