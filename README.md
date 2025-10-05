@@ -5,8 +5,6 @@
 [![bundle size](https://img.shields.io/bundlephobia/minzip/%40mubaraksoft%2Fevent-emitter?label=minzipped)](https://bundlephobia.com/package/@mubaraksoft/event-emitter)
 [![build](https://img.shields.io/github/actions/workflow/status/your-org/event-emitter/release.yml?branch=main)](https://github.com/your-org/event-emitter/actions)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
-[![semantic-release](https://img.shields.io/badge/semantic--release-🚀-brightgreen)](https://semantic-release.gitbook.io/)
-[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://www.conventionalcommits.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 
 A tiny, zero-dependency, **strongly typed** event emitter built on `EventTarget`, with
