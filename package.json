@@ -1,0 +1,30 @@
+{
+  "name": "@mubaraksoft/event-emitter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown build src/index.ts --format esm,cjs --dts",
+    "dev": "tsdown build src/index.ts --format esm,cjs --dts --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Abu Bakkar Siddique",
+  "description": "Simple libaray to manage events in browser",
+  "devDependencies": {
+    "tsdown": "^0.15.6",
+    "typescript": "^5.9.3"
+  }
+}
