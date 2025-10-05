@@ -1,6 +1,6 @@
 {
   "name": "@mubaraksoft/event-emitter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -34,6 +34,7 @@
   "author": "Abu Bakkar Siddique",
   "description": "Simple libaray to manage events in browser",
   "devDependencies": {
+    "semantic-release": "^24.2.9",
     "tsdown": "^0.15.6",
     "typescript": "^5.9.3"
   }
