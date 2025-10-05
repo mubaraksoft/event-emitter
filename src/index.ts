@@ -131,7 +131,7 @@ export class EventEmitter<M extends EventMapBase> implements IEventEmitter<M> {
   }
 
   private setNamespace(namespace: string) {
-    if (!namespace) throw new Error("namespace should be valid");
+    if (!namespace) throw new Error("Please provide a namespace");
     if (!this.controllers.has(namespace)) {
       this.controllers.set(namespace, new AbortController());
     }
