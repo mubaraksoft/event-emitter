@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mubaraksoft/event-emitter.git"
+    "url": "git+ssh://git@github.com/mubaraksoft/event-emitter.git"
   },
   "bugs": {
     "url": "https://github.com/mubaraksoft/event-emitter/issues"
@@ -26,14 +26,24 @@
   "homepage": "https://github.com/mubaraksoft/event-emitter#readme",
   "scripts": {
     "build": "tsdown build src/index.ts --format esm,cjs --dts",
-    "dev": "tsdown build src/index.ts --format esm,cjs --dts --watch",
-    "prepublishOnly": "npm run build",
-    "prepare": "husky",
-    "test": "Echo 'no test'"
+    "dev": "tsdown build src/index.ts --format esm,cjs --dts --watch"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "keywords": [
+    "event",
+    "browser",
+    "listener",
+    "dispatch"
+  ],
   "author": "Abu Bakkar Siddique",
   "description": "Simple libaray to manage events in browser",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.6",
+    "@semantic-release/npm": "^12.0.2",
     "semantic-release": "^24.2.9",
     "tsdown": "^0.15.6",
     "typescript": "^5.9.3"
