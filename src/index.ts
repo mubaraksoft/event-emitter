@@ -1,4 +1,4 @@
-// Utility: event payload augmented with its event name (added at dispatch)
+// Utility: event payload augmented with its event name
 type WithEventName<N extends string, P> = P & { eventName?: N };
 
 // A map from event name -> payload type
