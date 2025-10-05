@@ -1,5 +1,3 @@
-# @mubaraksoft/event-emitter
-
 [![npm version](https://img.shields.io/npm/v/%40mubaraksoft%2Fevent-emitter.svg)](https://www.npmjs.com/package/@mubaraksoft/event-emitter)
 [![npm downloads](https://img.shields.io/npm/dm/%40mubaraksoft%2Fevent-emitter.svg)](https://www.npmjs.com/package/@mubaraksoft/event-emitter)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/%40mubaraksoft%2Fevent-emitter?label=minzipped)](https://bundlephobia.com/package/@mubaraksoft/event-emitter)
