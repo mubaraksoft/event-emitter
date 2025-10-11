@@ -1,7 +1,6 @@
 [![npm version](https://img.shields.io/npm/v/%40mubaraksoft%2Fevent-emitter.svg)](https://www.npmjs.com/package/@mubaraksoft/event-emitter)
 [![npm downloads](https://img.shields.io/npm/dm/%40mubaraksoft%2Fevent-emitter.svg)](https://www.npmjs.com/package/@mubaraksoft/event-emitter)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/%40mubaraksoft%2Fevent-emitter?label=minzipped)](https://bundlephobia.com/package/@mubaraksoft/event-emitter)
-[![build](https://img.shields.io/github/actions/workflow/status/your-org/event-emitter/release.yml?branch=main)](https://github.com/your-org/event-emitter/actions)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)
 
