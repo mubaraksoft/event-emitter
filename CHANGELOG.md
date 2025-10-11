@@ -1,3 +1,10 @@
+## [1.0.5](https://github.com/mubaraksoft/event-emitter/compare/v1.0.4...v1.0.5) (2025-10-11)
+
+
+### Bug Fixes
+
+* update readme file ([#3](https://github.com/mubaraksoft/event-emitter/issues/3)) ([2c69b96](https://github.com/mubaraksoft/event-emitter/commit/2c69b968707a0007a9f6a4c4954007dc2ae2ab3e))
+
 ## [1.0.4](https://github.com/mubaraksoft/event-emitter/compare/v1.0.3...v1.0.4) (2025-10-05)
 
 
