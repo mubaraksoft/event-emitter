@@ -27,7 +27,7 @@ pnpm add @mubaraksoft/event-emitter
 yarn add @mubaraksoft/event-emitter
 ```
 
-No runtime dependencies.
+No runtime dependencies!
 
 ---
 
