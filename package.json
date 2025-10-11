@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/mubaraksoft/event-emitter#readme",
   "scripts": {
-    "build": "tsdown build src/index.ts --format esm,cjs --dts",
+    "build": "tsdown build src/index.ts --minify --format esm,cjs --dts",
     "dev": "tsdown build src/index.ts --format esm,cjs --dts --watch"
   },
   "publishConfig": {
